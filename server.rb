@@ -14,3 +14,10 @@ get '/' do
 	@peeps = Peep.all
 	erb :index
 end
+
+post '/peeps' do
+  message = params["message"]
+  user = params["user"]
+  peep = Peep.create(:message => message, :user => user)
+  redirect to('/')
+end
