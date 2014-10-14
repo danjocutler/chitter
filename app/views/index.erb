@@ -1,15 +1,15 @@
-<body>
+
 	
 	<% @peeps.each do |peep| %>
 		<p> "<%= peep.message %>" <%= peep.user %> </p>
 
 		<% end %>
 
-</body>
 
-<body id="new-peep">
+
+<article id="new-peep">
 	<form action='/peeps' method='post'>
 		Peep: <input type='text' name ='message'>
 		<input type='submit' value='Post'>
 	</form>
-</body>
+</article>

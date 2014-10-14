@@ -1,4 +1,4 @@
-require 'spec_helper'
+	require 'spec_helper'
 
 feature "User adds a new peep" do
 	scenario "when browsing the homepage" do
@@ -10,7 +10,7 @@ feature "User adds a new peep" do
 		expect(peep.message).to eq "I like tests"
 	end
 
-	def add_peep(message, user)
+	def add_peep(message, user) 
 		within('#new-peep') do
 			fill_in 'message', :with => message
 			click_button 'Post'
