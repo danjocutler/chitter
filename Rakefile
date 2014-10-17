@@ -1,7 +1,7 @@
 require 'data_mapper'
 require './app/data_mapper_setup'
-require_relative 'lib/peep'
-require_relative 'lib/user'
+require_relative 'app/models/peep'
+require_relative 'app/models/user'
 
 task :auto_upgrade do
 	DataMapper.auto_upgrade!
