@@ -20,8 +20,11 @@ feature "User adds a new peep" do
 		expect(peep.message).to eq "I like tests"
 	end
 
-	xscenario 'cannot peep if signed out' do
-
+	scenario 'cannot peep if signed out' do
+		visit '/'
+		sign_in('test@test.co.uk', 'test')
+		click_button 'Sign out'
+		expect(page).not_to have_content('post')
 	end
 
 	def add_peep(message) 
