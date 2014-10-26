@@ -1,26 +1,27 @@
 body {
   font-family: Helvetica, Arial, Sans-serif;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW6-qxq3OhB_mJbPZ111aFuUn5dsBEDHSt6b7x_cXsHGIP8LMUTQ);
+  background-image: url('http://slowbuddy.com/wp-content/gallery/plain-background/4567766846.jpg'); 
 }
 
 a.button {
   display: inline-block; /* display inline but have dimensions */
   width: 80px;
-  background-color: #82B743;
-  border: 2px solid white;
-  color: white; /*text colour*/
+  background-color: #5CD5DF;
+  border: 2px solid rgb(245, 14, 14);
+  color: greenyellow; /*text colour*/
   text-decoration: none; /*no underlining*/
   padding: 5px 10px;
   text-align: center;
-  border-radius: 4px; /*rounded corners*/
+  border-radius: 30px; /*rounded corners*/
   margin-left: 5px;
   margin-right: 5px;
   text-shadow: 0 0 2px rgba(0,0,0, 0.4); /*for readability*/
 }
 
 header {  
-  height: 40px;
-  background-color: black;
+  height: 60px;
+  background-color: rgb(55, 20, 215);
+  opacity: 0.8;
   color: white;
   display: flex; /* http://learnlayout.com/flexbox.html */
   padding: 0 20px;
@@ -34,7 +35,7 @@ header {
     display: flex;      
   }
 
-  header #user-links {
+  header #user-peeps {
     flex: 1; /* http://learnlayout.com/flexbox.html */
     -webkit-flex: 1;
     text-align: right;  

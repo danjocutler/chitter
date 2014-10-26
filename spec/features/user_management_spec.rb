@@ -25,7 +25,7 @@ end
 feature "User signs in" do
 
 	before(:each) do
-		User.create(name: "TessTickle",
+		User.create(name: "Test",
 								username: "testman",
 								email: "test@test.co.uk",
 								password: "test",
@@ -49,7 +49,7 @@ end
 feature 'User signs out' do
 
 	before(:each) do
-		User.create(name: "TessTickle",
+		User.create(name: "Test",
 								username: "testman",
 								email: "test@test.co.uk",
 								password: "test",

@@ -3,7 +3,7 @@
 	end
 
 	post '/sessions' do
-	  email, password = params[:email], params[:password]
+	  email, password, username = params[:email], params[:password], params[:username]
 	  user = User.authenticate(email, password)
 	  if user
 	    session[:user_id] = user.id

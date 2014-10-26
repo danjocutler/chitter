@@ -1,12 +1,11 @@
 <header>
-	<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjR_n6FVCx73pTvpf8fcBS_169EFOC4bvZSiFjRpbJz3zXo1MH'>
+	<a href='/'><input type='image' src='images/logo.jpg'></a>
 	<div id="logo">TwitFace</div>
-	<a href="/peeps/new" class="button highlighted">Add link</a>
 	<div id="user-peeps">
 		<% if current_user %>
 			<span id="welcome-message">
 				Welcome to TwitFace, <%= current_user.username %>
-				</span>
+			</span>
 
 		    <form id="sign-out" method='post' action='/sessions'>
 		      <input type='hidden' name='_method' value='delete'>
