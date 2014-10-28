@@ -8,5 +8,5 @@
 </article>
 
 		<% @peeps.reverse.each do |peep| %>
-			<p id='peeps'> <%= peep.message %></p> <p id=peep_username><%= peep.username %></p>
+			<p id='peeps'> <%= peep.message %></p> <p id='peep_username'><%= peep.user.username %></p>
 	<% end %>
