@@ -40,3 +40,28 @@ header {
     -webkit-flex: 1;
     text-align: right;  
   }
+
+  #new-peep {
+    text-align: center;
+    color: green;
+  }
+
+  #peeps {
+    text-align: center;
+    color: yellow;
+    padding: 1% ;
+  }
+
+  #peep_username {
+    text-align: center;
+    font-style: italic;
+    color: green;
+  }
+
+  #sign_up {
+    color: yellow;
+  }
+
+  #sign_in {
+    color: yellow;
+  }

@@ -1,12 +1,12 @@
 <article id="new-peep">
 <% if current_user %>
 	<form action='/peeps' method='post'>
-		Peep: <input type='text' name ='message'>
-		<input type='submit' value='Post'>
+		<p>Peep: <input type='text' name ='message'>
+		<input type='submit' value='Post'></p>
 	</form>
 	<% end %>
 </article>
 
 		<% @peeps.reverse.each do |peep| %>
-			<p> <%= peep.message %> <%= peep.username %> </p>
+			<p id='peeps'> <%= peep.message %></p> <p id=peep_username><%= peep.username %></p>
 	<% end %>
