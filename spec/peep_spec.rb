@@ -9,8 +9,8 @@ describe Peep do
       # In the beginning our database is empty, so there are no links
       expect(Peep.count).to eq(0)
       # this creates it in the database, so it's stored on the disk
-      Peep.create(message: "This is a test")
-      # We ask the database how many links we have, it should be 1
+      Peep.create(message: "This is a test", user_id: 1)
+      # We ask the database how many peeps we have, it should be 1
       expect(Peep.count).to eq(1)
       # Let's get the first (and only) peep from the database
       peep = Peep.first

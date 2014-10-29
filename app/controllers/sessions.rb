@@ -3,7 +3,7 @@
 	end
 
 	post '/sessions' do
-	  email, password, username = params[:email], params[:password], params[:username]
+	  email, password = params[:email], params[:password]
 	  user = User.authenticate(email, password)
 	  if user
 	    session[:user_id] = user.id
@@ -16,6 +16,6 @@
 
 	delete '/sessions' do
     flash[:notice] = "Goodbye!"
-    session.clear
+    session[:user_id] = nil
     redirect '/'
   end 

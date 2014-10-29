@@ -7,8 +7,7 @@ feature "User adds a new peep" do
 								username: "testman",
 								email: "test@test.co.uk",
 								password: "test",
-								password_confirmation: "test")		
-		# Peep.create(message: "I like tests")
+								password_confirmation: "test")
 	}
 
 	scenario "when browsing the homepage" do
