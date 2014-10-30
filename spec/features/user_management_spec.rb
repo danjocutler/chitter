@@ -26,10 +26,10 @@ feature "User signs in" do
 
 	before(:each) do
 		User.create(name: "Test",
-								username: "testman",
-								email: "test@test.co.uk",
-								password: "test",
-								password_confirmation: "test")
+					username: "testman",
+					email: "test@test.co.uk",
+					password: "test",
+					password_confirmation: "test")
 	end
 
 	scenario "with correct credentials" do
