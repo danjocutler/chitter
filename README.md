@@ -1,3 +1,5 @@
+CHITTER
+=======
 A twitter clone that allows users to post messages to a public stream.
 
 Users need to sign up with an email and password, name and username.
@@ -6,3 +8,5 @@ They can post messages (called peeps) and see other messages in a chronological 
 Bcrypt secures the passwords.
 datamapper and postgres saves the data
 deployed with heroku.
+---------------------------------------
+$ rackup  Visit localhost:9292
