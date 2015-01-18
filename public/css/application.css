@@ -5,18 +5,18 @@ body {
 }
 
 a.button {
-  display: inline-block; /* display inline but have dimensions */
+  display: inline-block;
   width: 80px;
   background-color: #5CD5DF;
   border: 2px solid rgb(245, 14, 14);
-  color: greenyellow; /*text colour*/
-  text-decoration: none; /*no underlining*/
+  color: greenyellow;
+  text-decoration: none;
   padding: 5px 10px;
   text-align: center;
-  border-radius: 30px; /*rounded corners*/
+  border-radius: 30px;
   margin-left: 5px;
   margin-right: 5px;
-  text-shadow: 0 0 2px rgba(0,0,0, 0.4); /*for readability*/
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
 }
 
 header {  
@@ -24,45 +24,45 @@ header {
   background-color: rgb(55, 20, 215);
   opacity: 0.8;
   color: white;
-  display: flex; /* http://learnlayout.com/flexbox.html */
+  display: flex;
   padding: 0 20px;
 }
 
-  /* every immediate child to be vertically centered */
-  header > * {
-    margin: auto 0;
-  }
-  header #logo {    
-    display: flex;      
-  }
+header > * {
+  margin: auto 0;
+}
 
-  header #user-peeps {
-    flex: 1; /* http://learnlayout.com/flexbox.html */
-    -webkit-flex: 1;
-    text-align: right;  
-  }
+header #logo {    
+  display: flex;      
+}
 
-  #new-peep {
-    text-align: center;
-    color: green;
-  }
+header #user-peeps {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: right;  
+}
 
-  #peeps {
-    text-align: center;
-    color: yellow;
-    padding: 1% ;
-  }
+#new-peep {
+  text-align: center;
+  color: green;
+}
 
-  #peep_username {
-    text-align: center;
-    font-style: italic;
-    color: green;
-  }
+#peeps {
+  text-align: center;
+  color: yellow;
+  padding: 1% ;
+}
 
-  #sign_up {
-    color: yellow;
-  }
+#peep_username {
+  text-align: center;
+  font-style: italic;
+  color: green;
+}
 
-  #sign_in {
-    color: yellow;
-  }
+#sign_up {
+  color: yellow;
+}
+
+#sign_in {
+  color: yellow;
+}

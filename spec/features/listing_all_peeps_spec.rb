@@ -29,6 +29,4 @@ feature "User browses the peeps" do
 		fill_in 'message', with: 'I like tests'
 		click_on 'Post'
 	end
-
-
 end

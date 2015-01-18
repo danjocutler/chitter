@@ -19,7 +19,6 @@ feature "User signs up" do
     expect{ sign_up }.to change(User, :count).by(0)
 		expect(page).to have_content("This email is already taken")
 	end
-
 end
 
 feature "User signs in" do
@@ -43,7 +42,6 @@ feature "User signs in" do
 		sign_in('test@test.co.uk', 'wrong')
 		expect(page).not_to have_content("Welcome to TwitFace, testman")
 	end
-
 end
 
 feature 'User signs out' do
@@ -62,6 +60,4 @@ feature 'User signs out' do
     expect(page).to have_content("Goodbye!")
     expect(page).not_to have_content("Welcome to TwitFace, testman")
   end
-
 end
-

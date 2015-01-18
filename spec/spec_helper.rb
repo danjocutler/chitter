@@ -8,7 +8,6 @@ require 'capybara/rspec'
   
   RSpec.configure do |config|
 
-
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
@@ -31,6 +30,4 @@ require 'capybara/rspec'
   
   mocks.verify_partial_doubles = true
   end
-
 end
-
